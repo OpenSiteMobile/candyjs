@@ -10,7 +10,7 @@
 //			Email:  dwight_vietzke@yahoo.com
 
 /*
-	OpenSiteMobile Candy Chat demo page configuration file
+	OpenSiteMobile - Candy Chat demo page configuration file
 */
 
 /*global
@@ -20,11 +20,12 @@
     addthis_config: true
 */
 
-msos.console.info('config -> start, (/config.js file).');
+msos.console.info('config -> start, (/candyjs/config.js file).');
 msos.console.time('config');
 
 // Set specific flags for this configuration:
 msos.config.run_ads = true;
+msos.config.run_size = true;
 msos.config.run_analytics = true;
 //msos.config.run_onerror = true;
 msos.config.run_social = true;
@@ -75,12 +76,11 @@ if (msos.config.debug_script) {
 			msos.resource_url('underscore', 'v160.uc.js'),
 			msos.resource_url('hammer', 'v106.uc.js'),			// jQuery.hammer.js version of Hammer.js
 			msos.resource_url('backbone', 'v110.uc.js'),
-			msos.resource_url('marionette', 'v123.uc.js'),
 			msos.resource_url('strophe', 'md5.uc.js'),
 			msos.resource_url('strophe', 'v102ws.uc.js'),
 			msos.resource_url('strophe', 'muc.uc.js'),
 			msos.resource_url('mustache', 'v082.uc.js'),
-			msos.resource_url('msos', 'site.uc.js'),			// Common installation specific setup code (which needs jQuery, underscore.js, etc.)
+			msos.resource_url('','site.js'),					// Common installation specific setup code (which needs jQuery, underscore.js, etc.)
 			msos.resource_url('msos', 'core.uc.js')
 		];
 
@@ -94,13 +94,12 @@ if (msos.config.debug_script) {
 			msos.resource_url('underscore', 'v160.uc.js'),
 			msos.resource_url('hammer', 'v106.uc.js'),			// jQuery.hammer.js version of Hammer.js
 			msos.resource_url('backbone', 'v110.uc.js'),
-			msos.resource_url('marionette', 'v123.uc.js'),
 			msos.resource_url('strophe', 'base64.uc.js'),
 			msos.resource_url('strophe', 'md5.uc.js'),
 			msos.resource_url('strophe', 'v102.uc.js'),
 			msos.resource_url('strophe', 'muc.uc.js'),
 			msos.resource_url('mustache', 'v082.uc.js'),
-			msos.resource_url('msos', 'site.uc.js'),			// Common installation specific setup code (which needs jQuery, underscore.js, etc.)
+			msos.resource_url('','site.js'),					// Common installation specific setup code (which needs jQuery, underscore.js, etc.)
 			msos.resource_url('msos', 'core.uc.js')
 		];
 	}
@@ -114,12 +113,12 @@ if (msos.config.debug_script) {
 	if (msos.config.use_websockets && msos.config.websocket) {
 		// Standard site provided (including ext. bundles) scripts
 		msos.deferred_scripts = [
-			msos.resource_url('msos', 'bundle.min.js'),		// Modernizr, jQuery, jQuery-UI, Underscore, Backbone, Marionette bundled together
+			msos.resource_url('msos', 'bundle.min.js'),		// Modernizr, jQuery, jQuery-UI, Underscore, Backbone bundled together
 			msos.resource_url('strophe', 'md5.min.js'),
 			msos.resource_url('strophe', 'v102ws.uc.js'),	// Still under development
 			msos.resource_url('strophe', 'muc.min.js'),
 			msos.resource_url('mustache', 'v082.min.js'),
-			msos.resource_url('msos', 'site.min.js'),
+			msos.resource_url('','site.js'),
 			msos.resource_url('msos', 'core.min.js')
 		];
 
@@ -127,13 +126,13 @@ if (msos.config.debug_script) {
 	} else {
 		// Standard site provided (including ext. bundles) scripts
 		msos.deferred_scripts = [
-			msos.resource_url('msos', 'bundle.min.js'),		// Modernizr, jQuery, jQuery-UI, Underscore, Backbone, Marionette bundled together
+			msos.resource_url('msos', 'bundle.min.js'),		// Modernizr, jQuery, jQuery-UI, Underscore, Backbone bundled together
 			msos.resource_url('strophe', 'base64.min.js'),
 			msos.resource_url('strophe', 'md5.min.js'),
 			msos.resource_url('strophe', 'v102.uc.js'),		// Still under development
 			msos.resource_url('strophe', 'muc.min.js'),
 			msos.resource_url('mustache', 'v082.min.js'),
-			msos.resource_url('msos', 'site.min.js'),
+			msos.resource_url('','site.js'),
 			msos.resource_url('msos', 'core.min.js')
 		];
 	} 
