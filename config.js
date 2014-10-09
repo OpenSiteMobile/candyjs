@@ -70,12 +70,12 @@ if (msos.config.debug_script) {
 	if (msos.config.use_websockets && msos.config.websocket) {
 		// Debug full scripts (line no's mean something)
 		msos.deferred_scripts = [
-			msos.resource_url('modernizr', 'v271.uc.js'),		// no class selectors - see build.txt note in /htdocs/modernizr
-			msos.resource_url('jquery', 'v210.uc.js'),
+			msos.resource_url('modernizr', 'v283.uc.js'),		// no class selectors - see build.txt note in /htdocs/modernizr
+			msos.resource_url('jquery', 'v211.uc.js'),
 			msos.resource_url('jquery', 'ui/v1104.uc.js'),		// All UI Core + Draggable Interaction + Effects Core
-			msos.resource_url('underscore', 'v160.uc.js'),
-			msos.resource_url('hammer', 'v106.uc.js'),			// jQuery.hammer.js version of Hammer.js
-			msos.resource_url('backbone', 'v110.uc.js'),
+			msos.resource_url('underscore', 'v170.uc.js'),
+			msos.resource_url('hammer', 'v203.uc.js'),			// jQuery.hammer.js version of Hammer.js
+			msos.resource_url('backbone', 'v112.uc.js'),
 			msos.resource_url('strophe', 'md5.uc.js'),
 			msos.resource_url('strophe', 'v102ws.uc.js'),
 			msos.resource_url('strophe', 'muc.uc.js'),
@@ -88,12 +88,12 @@ if (msos.config.debug_script) {
 	} else {
 		// Debug full scripts (line no's mean something)
 		msos.deferred_scripts = [
-			msos.resource_url('modernizr', 'v271.uc.js'),		// no class selectors - see build.txt note in /htdocs/modernizr
-			msos.resource_url('jquery', 'v210.uc.js'),
+			msos.resource_url('modernizr', 'v283.uc.js'),		// no class selectors - see build.txt note in /htdocs/modernizr
+			msos.resource_url('jquery', 'v211.uc.js'),
 			msos.resource_url('jquery', 'ui/v1104.uc.js'),		// All UI Core + Draggable Interaction + Effects Core
-			msos.resource_url('underscore', 'v160.uc.js'),
-			msos.resource_url('hammer', 'v106.uc.js'),			// jQuery.hammer.js version of Hammer.js
-			msos.resource_url('backbone', 'v110.uc.js'),
+			msos.resource_url('underscore', 'v170.uc.js'),
+			msos.resource_url('hammer', 'v203.uc.js'),			// jQuery.hammer.js version of Hammer.js
+			msos.resource_url('backbone', 'v112.uc.js'),
 			msos.resource_url('strophe', 'base64.uc.js'),
 			msos.resource_url('strophe', 'md5.uc.js'),
 			msos.resource_url('strophe', 'v102.uc.js'),
@@ -102,10 +102,6 @@ if (msos.config.debug_script) {
 			msos.resource_url('','site.js'),					// Common installation specific setup code (which needs jQuery, underscore.js, etc.)
 			msos.resource_url('msos', 'core.uc.js')
 		];
-	}
-
-	if (!msos.config.json) {
-		msos.deferred_scripts.push(msos.resource_url('utils', 'json2.uc.js'));
 	}
 
 } else {
@@ -135,10 +131,6 @@ if (msos.config.debug_script) {
 			msos.resource_url('','site.js'),
 			msos.resource_url('msos', 'core.min.js')
 		];
-	} 
-
-	if (!msos.config.json) {
-		msos.deferred_scripts.push(msos.resource_url('utils', 'json2.min.js'));
 	}
 }
 
