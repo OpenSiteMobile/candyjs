@@ -99,19 +99,25 @@
 
 			msos.console.info('Page: index.html loaded!');
 
-			candy.wrapper.init(
-				jQuery('#candy'),
-				{
-					core: {
-						debug: true,
+			// Only run once, or after disconnection
+			if (!candy.wrapper.connected) {
+				candy.wrapper.init(
+					jQuery('#candy'),
+					jQuery('#candy_login'),
+					jQuery('#candy_enter'),
+					jQuery('#candy_msg'),
+					jQuery('#candy_username'),
+					jQuery('#candy_password'),
+					jQuery('#candy_nickname'),
+					jQuery('#candy_members'),
+					jQuery('#candy_toolbar'),
+					{
 						autojoin: ['welcome@conference.satellitel675'],
-						annonymous: true
-					},
-					view: {
-						language: 'en',
+						annonymous: true,
+						host: 'satellitel675'
 					}
-				}
-			);
+				);
+			}
 
 			jQuery('#body').css('display', 'block');
 		}

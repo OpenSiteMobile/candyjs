@@ -75,13 +75,10 @@ if (msos.config.debug_script) {
 		// Debug full scripts (line no's mean something)
 		msos.deferred_scripts = [
 			msos.resource_url('modernizr', 'v283.uc.js'),		// no class selectors - see build.txt note in /htdocs/modernizr
-			msos.resource_url('jquery', 'v211.uc.js'),
-			msos.resource_url('jquery', 'ui/v1104.uc.js'),		// All UI Core + Draggable Interaction + Effects Core
-			msos.resource_url('underscore', 'v182.uc.js'),
-			msos.resource_url('strophe', 'md5.uc.js'),
-			msos.resource_url('strophe', 'v102ws.uc.js'),
-			msos.resource_url('strophe', 'muc.uc.js'),
-			msos.resource_url('mustache', 'v082.uc.js'),
+			msos.resource_url('jquery', 'v214.uc.js'),
+			msos.resource_url('jquery', 'ui/v1114.uc.js'),		// All UI Core + Draggable Interaction + Effects Core
+			msos.resource_url('hammer', 'v203.uc.js'),			// jQuery.hammer.js version of Hammer.js
+			msos.resource_url('strophe', 'v123_ws_msos.uc.js'),
 			msos.resource_url('','site.js'),					// Common installation specific setup code (which needs jQuery, underscore.js, etc.)
 			msos.resource_url('msos', 'core.uc.js')
 		];
@@ -91,14 +88,10 @@ if (msos.config.debug_script) {
 		// Debug full scripts (line no's mean something)
 		msos.deferred_scripts = [
 			msos.resource_url('modernizr', 'v283.uc.js'),		// no class selectors - see build.txt note in /htdocs/modernizr
-			msos.resource_url('jquery', 'v211.uc.js'),
-			msos.resource_url('jquery', 'ui/v1104.uc.js'),		// All UI Core + Draggable Interaction + Effects Core
-			msos.resource_url('underscore', 'v182.uc.js'),
-			msos.resource_url('strophe', 'base64.uc.js'),
-			msos.resource_url('strophe', 'md5.uc.js'),
-			msos.resource_url('strophe', 'v102.uc.js'),
-			msos.resource_url('strophe', 'muc.uc.js'),
-			msos.resource_url('mustache', 'v082.uc.js'),
+			msos.resource_url('jquery', 'v214.uc.js'),
+			msos.resource_url('jquery', 'ui/v1114.uc.js'),		// All UI Core + Draggable Interaction + Effects Core
+			msos.resource_url('hammer', 'v203.uc.js'),			// jQuery.hammer.js version of Hammer.js
+			msos.resource_url('strophe', 'v123_msos.uc.js'),
 			msos.resource_url('','site.js'),					// Common installation specific setup code (which needs jQuery, underscore.js, etc.)
 			msos.resource_url('msos', 'core.uc.js')
 		];
@@ -110,13 +103,10 @@ if (msos.config.debug_script) {
 		// Standard site provided (including ext. bundles) scripts
 		msos.deferred_scripts = [
 			msos.resource_url('modernizr', 'v283.min.js'),		// no class selectors - see build.txt note in /htdocs/modernizr
-			msos.resource_url('jquery', 'v211.min.js'),
-			msos.resource_url('jquery', 'ui/v1104.min.js'),		// All UI Core + Draggable Interaction + Effects Core
-			msos.resource_url('underscore', 'v182.min.js'),
-			msos.resource_url('strophe', 'md5.min.js'),
-			msos.resource_url('strophe', 'v102ws.uc.js'),		// Still under development
-			msos.resource_url('strophe', 'muc.min.js'),
-			msos.resource_url('mustache', 'v082.min.js'),
+			msos.resource_url('jquery', 'v214.min.js'),
+			msos.resource_url('jquery', 'ui/v1114.min.js'),		// All UI Core + Draggable Interaction + Effects Core
+			msos.resource_url('hammer', 'v203.min.js'),			// jQuery.hammer.js version of Hammer.js
+			msos.resource_url('strophe', 'v123_ws_msos.min.js'),
 			msos.resource_url('','site.js'),
 			msos.resource_url('msos', 'core.min.js')
 		];
@@ -126,14 +116,10 @@ if (msos.config.debug_script) {
 		// Standard site provided (including ext. bundles) scripts
 		msos.deferred_scripts = [
 			msos.resource_url('modernizr', 'v283.min.js'),		// no class selectors - see build.txt note in /htdocs/modernizr
-			msos.resource_url('jquery', 'v211.min.js'),
-			msos.resource_url('jquery', 'ui/v1104.min.js'),		// All UI Core + Draggable Interaction + Effects Core
-			msos.resource_url('underscore', 'v182.min.js'),
-			msos.resource_url('strophe', 'base64.min.js'),
-			msos.resource_url('strophe', 'md5.min.js'),
-			msos.resource_url('strophe', 'v102.uc.js'),			// Still under development
-			msos.resource_url('strophe', 'muc.min.js'),
-			msos.resource_url('mustache', 'v082.min.js'),
+			msos.resource_url('jquery', 'v214.min.js'),
+			msos.resource_url('jquery', 'ui/v1114.min.js'),		// All UI Core + Draggable Interaction + Effects Core
+			msos.resource_url('hammer', 'v203.min.js'),			// jQuery.hammer.js version of Hammer.js
+			msos.resource_url('strophe', 'v123_msos.min.js'),
 			msos.resource_url('','site.js'),
 			msos.resource_url('msos', 'core.min.js')
 		];
